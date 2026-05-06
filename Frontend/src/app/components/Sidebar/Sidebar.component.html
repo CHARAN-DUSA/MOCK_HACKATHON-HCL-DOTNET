@@ -1,0 +1,106 @@
+<div class="app-wrapper">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <span class="app-logo">
+        <mat-icon>contacts</mat-icon>
+        <span>Contacts</span>
+      </span>
+      <button mat-fab extended color="primary" class="new-btn" (click)="openAddDialog()">
+        <mat-icon>add</mat-icon>
+        New Contact
+      </button>
+    </div>
+
+    <!-- Search -->
+    <div class="search-box">
+      <mat-icon class="search-icon">search</mat-icon>
+      <input
+        class="search-input"
+        placeholder="Search contacts..."
+        [ngModel]="searchQuery()"
+        (ngModelChange)="searchQuery.set($event)"
+      />
+    </div>
+
+    <!-- Nav items -->
+    <nav class="sidebar-nav">
+      <a class="nav-item" 
+         [class.active]="activeView() === 'all'"
+         (click)="showAll()">
+        <mat-icon>people</mat-icon>
+        <span>All Contacts</span>
+        <span class="count-badge">{{ allContactsCount() }}</span>
+      </a>
+      
+      <a class="nav-item" 
+         [class.active]="activeView() === 'favorites'"
+         (click)="showFavorites()">
+        <mat-icon>star</mat-icon>
+        <span>Favorites</span>
+        <span class="count-badge">{{ favoritesCount() }}</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Contact List Panel -->
+  <section class="contact-list-panel">
+    <div class="list-header">
+      <h2>
+        {{ activeView() === 'favorites' ? 'Favorites' : 'All contacts' }}
+        <span class="list-count">({{ filteredContacts().length }})</span>
+      </h2>
+    </div>
+
+    @if (loading()) {
+      <div class="loader-wrap">
+        <mat-spinner diameter="40"></mat-spinner>
+      </div>
+    } @else if (filteredContacts().length === 0) {
+      <div class="empty-state">
+        <mat-icon>person_off</mat-icon>
+        <p>{{ activeView() === 'favorites' ? 'No favorite contacts' : 'No contacts found' }}</p>
+        <button mat-stroked-button color="primary" (click)="openAddDialog()">
+          {{ activeView() === 'favorites' ? 'Add favorites' : 'Add your first contact' }}
+        </button>
+      </div>
+    } @else {
+      <ul class="contact-list">
+        @for (contact of filteredContacts(); track contact.id) {
+          <li
+            class="contact-item"
+            [class.selected]="selectedContact()?.id === contact.id"
+            (click)="selectContact(contact)"
+          >
+            <div class="avatar" [style.background]="getAvatarColor(contact.firstName)">
+              {{ getInitials(contact) }}
+            </div>
+            <div class="contact-info">
+              <span class="contact-name">{{ contact.firstName }} {{ contact.lastName }}</span>
+              <span class="contact-meta">{{ contact.email || contact.phoneNumber }}</span>
+            </div>
+            @if (contact.favorite) {
+              <mat-icon class="fav-icon">star</mat-icon>
+            }
+          </li>
+        }
+      </ul>
+    }
+  </section>
+
+  <!-- Contact Detail Panel -->
+  <section class="contact-detail-panel">
+    @if (selectedContact()) {
+      <app-contact-detail
+        [contact]="selectedContact()!"
+        (edit)="openEditDialog($event)"
+        (delete)="confirmDelete($event)"
+      />
+    } @else {
+      <div class="no-selection">
+        <mat-icon>contact_page</mat-icon>
+        <p>Select a contact to view details</p>
+      </div>
+    }
+  </section>
+</div>

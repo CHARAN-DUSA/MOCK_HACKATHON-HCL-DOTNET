@@ -1,0 +1,80 @@
+<div class="detail-container">
+  <!-- Header -->
+  <div class="detail-header">
+    <div class="avatar-large" [style.background]="getAvatarColor(contact.firstName)">
+      {{ getInitials(contact) }}
+    </div>
+    <div class="header-info">
+      <h1 class="contact-fullname">{{ contact.firstName }} {{ contact.lastName }}</h1>
+      @if (contact.company) {
+        <p class="contact-company">{{ contact.company }}</p>
+      }
+      @if (contact.favorite) {
+        <span class="fav-chip">
+          <mat-icon>star</mat-icon> Favorite
+        </span>
+      }
+    </div>
+    <div class="header-actions">
+      <button mat-icon-button color="primary" (click)="edit.emit(contact)" matTooltip="Edit contact">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button color="warn" (click)="delete.emit(contact)" matTooltip="Delete contact">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <!-- Fields -->
+  <div class="detail-fields">
+    @if (contact.email) {
+      <div class="field-row">
+        <mat-icon class="field-icon">email</mat-icon>
+        <div>
+          <label>Email</label>
+          <a [href]="'mailto:' + contact.email" class="field-value link">{{ contact.email }}</a>
+        </div>
+      </div>
+    }
+
+    @if (contact.phoneNumber) {
+      <div class="field-row">
+        <mat-icon class="field-icon">phone</mat-icon>
+        <div>
+          <label>Phone</label>
+          <a [href]="'tel:' + contact.phoneNumber" class="field-value link">{{ contact.phoneNumber }}</a>
+        </div>
+      </div>
+    }
+
+    @if (contact.company) {
+      <div class="field-row">
+        <mat-icon class="field-icon">business</mat-icon>
+        <div>
+          <label>Company</label>
+          <span class="field-value">{{ contact.company }}</span>
+        </div>
+      </div>
+    }
+
+    @if (contact.address) {
+      <div class="field-row">
+        <mat-icon class="field-icon">location_on</mat-icon>
+        <div>
+          <label>Address</label>
+          <span class="field-value">{{ contact.address }}</span>
+        </div>
+      </div>
+    }
+
+    <div class="field-row">
+      <mat-icon class="field-icon">schedule</mat-icon>
+      <div>
+        <label>Added on</label>
+        <span class="field-value">{{ contact.createdAt | date:'mediumDate' }}</span>
+      </div>
+    </div>
+  </div>
+</div>

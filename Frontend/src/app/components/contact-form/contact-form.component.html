@@ -1,0 +1,58 @@
+<h2 mat-dialog-title>{{ isEdit ? 'Edit Contact' : 'New Contact' }}</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="form" class="contact-form">
+    <div class="form-row">
+      <mat-form-field appearance="outline" class="half">
+        <mat-label>First Name *</mat-label>
+        <input matInput formControlName="firstName" placeholder="John" />
+        @if (form.get('firstName')?.hasError('required') && form.get('firstName')?.touched) {
+          <mat-error>First name is required</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="half">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastName" placeholder="Doe" />
+      </mat-form-field>
+    </div>
+
+    <mat-form-field appearance="outline" class="full">
+      <mat-label>Email</mat-label>
+      <mat-icon matPrefix>email</mat-icon>
+      <input matInput formControlName="email" placeholder="john@example.com" type="email" />
+      @if (form.get('email')?.hasError('email') && form.get('email')?.touched) {
+        <mat-error>Enter a valid email</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full">
+      <mat-label>Phone Number</mat-label>
+      <mat-icon matPrefix>phone</mat-icon>
+      <input matInput formControlName="phoneNumber" placeholder="+91 9876543210" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full">
+      <mat-label>Company</mat-label>
+      <mat-icon matPrefix>business</mat-icon>
+      <input matInput formControlName="company" placeholder="Acme Corp" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full">
+      <mat-label>Address</mat-label>
+      <mat-icon matPrefix>location_on</mat-icon>
+      <textarea matInput formControlName="address" rows="2" placeholder="123 Main St, City, Country"></textarea>
+    </mat-form-field>
+
+    <mat-checkbox formControlName="favorite" color="primary">
+      Mark as Favorite
+    </mat-checkbox>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="cancel()">Cancel</button>
+  <button mat-flat-button color="primary" (click)="submit()" [disabled]="form.invalid">
+    {{ isEdit ? 'Update' : 'Add Contact' }}
+  </button>
+</mat-dialog-actions>

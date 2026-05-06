@@ -1,0 +1,31 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Google Sans', 'Segoe UI', Roboto, sans-serif;
+  background: #f8f9fa;
+  color: #202124;
+}
+
+/* Snackbar styles */
+.snack-success .mdc-snackbar__surface {
+  background: #1e8e3e !important;
+  color: #fff !important;
+}
+
+.snack-error .mdc-snackbar__surface {
+  background: #d32f2f !important;
+  color: #fff !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #dadce0; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #bdc1c6; }

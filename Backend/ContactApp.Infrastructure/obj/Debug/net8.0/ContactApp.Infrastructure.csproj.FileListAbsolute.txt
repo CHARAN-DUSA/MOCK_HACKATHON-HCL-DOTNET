@@ -1,0 +1,17 @@
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\bin\Debug\net8.0\ContactApp.Infrastructure.deps.json
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\bin\Debug\net8.0\ContactApp.Infrastructure.runtimeconfig.json
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\bin\Debug\net8.0\ContactApp.Infrastructure.dll
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\bin\Debug\net8.0\ContactApp.Infrastructure.pdb
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\bin\Debug\net8.0\ContactApp.Core.dll
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\bin\Debug\net8.0\ContactApp.Core.pdb
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\obj\Debug\net8.0\ContactApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\obj\Debug\net8.0\ContactApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\obj\Debug\net8.0\ContactApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\obj\Debug\net8.0\ContactApp.Infrastructure.AssemblyInfo.cs
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\obj\Debug\net8.0\ContactApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\obj\Debug\net8.0\ContactA.0F32F3B4.Up2Date
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\obj\Debug\net8.0\ContactApp.Infrastructure.dll
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\obj\Debug\net8.0\refint\ContactApp.Infrastructure.dll
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\obj\Debug\net8.0\ContactApp.Infrastructure.pdb
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\obj\Debug\net8.0\ContactApp.Infrastructure.genruntimeconfig.cache
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Infrastructure\obj\Debug\net8.0\ref\ContactApp.Infrastructure.dll

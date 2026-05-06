@@ -1,0 +1,18 @@
+# Backend
+Backend/ContactApp.API/bin/
+Backend/ContactApp.API/obj/
+Backend/ContactApp.API/appsettings.Development.json
+Backend/ContactApp.API/*.usersecrets.json
+*.db
+
+# Frontend
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.angular/
+Frontend/.env
+
+# General
+.DS_Store
+*.log
+.env
+secrets.json

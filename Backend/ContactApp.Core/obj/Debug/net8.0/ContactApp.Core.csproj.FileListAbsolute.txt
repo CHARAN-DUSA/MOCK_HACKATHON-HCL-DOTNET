@@ -1,0 +1,11 @@
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Core\bin\Debug\net8.0\ContactApp.Core.deps.json
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Core\bin\Debug\net8.0\ContactApp.Core.dll
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Core\bin\Debug\net8.0\ContactApp.Core.pdb
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Core\obj\Debug\net8.0\ContactApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Core\obj\Debug\net8.0\ContactApp.Core.AssemblyInfoInputs.cache
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Core\obj\Debug\net8.0\ContactApp.Core.AssemblyInfo.cs
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Core\obj\Debug\net8.0\ContactApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Core\obj\Debug\net8.0\ContactApp.Core.dll
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Core\obj\Debug\net8.0\refint\ContactApp.Core.dll
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Core\obj\Debug\net8.0\ContactApp.Core.pdb
+C:\Users\chara\OneDrive\Desktop\ContactApp\ContactApp\Backend\ContactApp.Core\obj\Debug\net8.0\ref\ContactApp.Core.dll
